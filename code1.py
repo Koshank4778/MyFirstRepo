@@ -12,6 +12,18 @@ def borrow_book(book):
     else:
         print("Not available")
 
+# New function: remove book from library
+def remove_book(book):
+    if book in books:
+        books.remove(book)
+        print("Book removed from library")
+    else:
+        print("Book not found")
+
+# Running the program
 show_books()
 borrow_book("Math")
+show_books()
+
+remove_book("Science")   # testing remove function
 show_books()
